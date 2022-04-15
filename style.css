@@ -210,7 +210,8 @@ input::placeholder{
     padding:3rem 4.8rem;
     margin-right: 35%;
     margin-bottom: 9.6rem;
-
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 5px rgb(105, 106, 149,0.05);
 }
 
 .testimonial-text{
@@ -273,13 +274,13 @@ input::placeholder{
     color:hsl(240, 80%, 98%);
     padding-right: 12.8rem;
     line-height: 1.4;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .form--two{
     display:flex;
     flex-direction: column;
-    gap:3rem;
+    gap:1.2rem;
     align-self: flex-end;
 }
 
@@ -289,7 +290,7 @@ input::placeholder{
 
 .cta--btn{
     padding:1.4rem;
-    flex-basis:40%;
+    width:40%;
 }
 
 
@@ -495,6 +496,7 @@ input::placeholder{
     }
 
     .cta--btn{
+        width:100%;
         font-size: 1.2rem;
         padding: 1rem 0 1rem 1rem;
     }
