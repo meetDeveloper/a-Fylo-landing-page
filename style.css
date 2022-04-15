@@ -1,0 +1,523 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+
+/*********************
+       GENERAL
+*********************/
+:root{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, ::after, ::before{
+    box-sizing: inherit;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/*********************/
+    /* REUSABLE */
+/*********************/
+
+.sm-container{
+    max-width: 128rem;
+    margin: 0 auto;
+}
+
+.section-heading{
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.btn{
+    padding: 1rem 6.2rem;
+    font-family:'Raleway', sans-serif ;
+    font-weight: 700;
+    background-color:hsl(224, 93%, 58%);
+    color:hsl(240, 75%, 98%) ;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(48, 101, 248, 0.56);
+    font-size: 1.6rem;
+}
+
+.btn:hover{
+    background-color:#5984f9;
+}
+
+img{
+    max-width:100%;
+}
+
+.margin-head{
+    margin-bottom: 2rem;
+}
+
+.margin-des{
+    margin-bottom: 2.4rem;
+}
+
+.mg-two{
+    margin-bottom: 1.2rem;
+}
+
+/*********************/
+    /* HEADER */
+/*********************/
+
+.hero-section{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12.8rem;
+    margin-top:4.8rem;
+}
+
+
+.nav-links{
+    font-family:'Raleway', sans-serif;
+    font-weight: 400;
+    list-style: none;
+    display: flex;
+    gap: 6.2rem;
+}
+
+.nav-link:link,
+.nav-link:visited{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #696a95;
+
+}
+
+
+/*********************/
+    /* SECTION ONE */
+/*********************/
+
+.one{
+    gap: 4rem;
+    margin-bottom: 12.8rem;
+}
+
+.section-one{
+    padding-top:8rem;
+}
+
+.section-description{
+    font-size:1.8rem;
+}
+
+.form--one{
+    display: flex;
+    gap:2rem;
+}
+
+.input{
+    width: 32rem;
+    height: 4.5rem;
+    padding:2rem 0 1.4rem 2.4rem;
+}
+
+input::placeholder{
+    color: hsl(0, 0%, 75%,0.8);
+
+}
+
+
+/*********************/
+    /* SECTION TWO */
+/*********************/
+
+.section-two{
+    margin-top:-1rem;
+    background-color: #f8f8ff;
+}
+
+.heading-two{
+    font-size: 3.6rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 2.4rem;
+}
+
+.description-two{
+    font-size: 1.8rem;
+}
+
+.illustration-2{
+    margin-top: 4.8rem;
+}
+
+.two{
+    padding-top:6.2rem;
+    gap:8rem;
+}
+
+.section-two-text{
+    padding-right: 9.6rem;
+}
+
+.feature{
+    text-decoration: none;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    display:inline-flex;
+    gap: 0.6rem;
+    margin-bottom: 4.4rem;
+}
+
+.feature-text{
+    font-size: 1.6rem;
+}
+
+.arrow{
+    align-self: end;
+}
+
+.feature:link,
+.feature:visited{
+    color:hsl(170, 45%, 43%);
+    transition: all 0.3s;
+}
+
+.feature:hover,
+.feature:active{
+    color:hsl(170, 34%, 61%);
+    border-color: hsl(170, 34%, 61%);
+}
+
+.feature:hover .use{
+    fill :hsl(170, 34%, 61%) ;
+}
+
+.testimonial{
+    background-color:#fff;
+    padding:3rem 4.8rem;
+    margin-right: 35%;
+    margin-bottom: 9.6rem;
+
+}
+
+.testimonial-text{
+    margin: 1rem 0 2rem;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    align-items: center;
+}
+
+
+.author{
+    display: flex;
+    gap:1.2rem;
+}
+
+.author-img{
+    height:4rem;
+    border-radius:10rem;
+}
+
+.author-info{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+}
+
+.author-name{
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
+}
+
+.author-occupation{
+    font-size: 1.2rem;
+}
+
+/*********************/
+/* CALL TO ACTION */
+/*********************/
+.cta-section{
+    background-color:#696a95;
+    font-family:'Raleway', sans-serif ;
+    font-weight: 400;
+    padding:9.6rem 0;
+}
+
+.cta{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 12.8rem;
+}
+
+.cta--heading{
+    font-size: 3.2rem;
+    color:hsl(240, 80%, 98%);
+    margin-bottom: 2rem;
+}
+
+.cta--description{
+    color:hsl(240, 80%, 98%);
+    padding-right: 12.8rem;
+    line-height: 1.4;
+    font-size: 1.8rem;
+}
+
+.form--two{
+    display:flex;
+    flex-direction: column;
+    gap:3rem;
+    align-self: flex-end;
+}
+
+.cta-input{
+    padding: 1.8rem 0 1.8rem 1.8rem;
+}
+
+.cta--btn{
+    padding:1.4rem;
+    flex-basis:40%;
+}
+
+
+
+
+/*********************/
+    /* Footer section */
+/*********************/
+.footer-section{
+    background-color: hsl(243, 87%, 12%);
+    color:hsl(240, 80%, 98%);
+    padding:9.6rem 0;
+    font-size: 1.6rem;
+
+}
+
+.logo-footer{
+    filter: brightness(0) invert(1);
+    margin-bottom:2.4rem;
+}
+
+
+.contact{
+    display: flex;
+    gap:2.4rem;
+    align-items: center;
+    margin-bottom: 1.8rem;
+    font-style: normal;
+}
+
+.contact a{
+    color:hsl(240, 80%, 98%);
+    text-decoration: none;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-links{
+    display:inline-flex;
+    flex-direction: column;
+    justify-self: center;
+    gap:1.8rem;
+}
+
+.row{
+    flex-direction:row;
+    gap:1.2rem;
+}
+.icon{
+    padding: 1rem;
+    border: 1px solid hsl(240, 80%, 98%);
+    border-radius: 50rem;
+}
+
+.facebook.icon{
+    padding:1rem 1.2rem;
+}
+
+.footer-link:link,
+.footer-link:visited{
+    color:hsl(240, 80%, 98%);
+    text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:active{
+    color:#696a95;
+}
+
+.footer-link:hover .icon{
+    border-color:#696a95;
+
+}
+
+
+@media (max-width: 24em){
+    .sm-container{
+        padding:0 2.4rem;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section{
+        margin:0 0 9.6rem;
+        padding-top: 2.4rem;
+    }
+
+    .logo-img{
+        height: 2.8rem;
+    }
+
+    .nav-links{
+        gap: 1.2rem;
+    }
+
+    /* one */
+    .one{
+        margin-bottom: 9.6rem;
+    }
+
+    .section-one{
+        text-align:center;
+    }
+    
+    .img-type{
+        grid-row: 1;
+    }
+
+    .section-one{
+        padding-top:2.4rem;
+    }
+
+    .section-heading{
+        font-size: 2.4rem;
+    }
+
+    .section-description{
+        font-size: 1.6rem;
+    }
+
+    .form--one{
+        flex-direction: column;
+    }
+
+    .input{
+        width: 100%;
+    }
+
+    /* SECTION TWO */
+
+    .illustration-2{
+        grid-row: 1;
+        margin-top: 6.2rem;
+    }
+
+    .heading-two{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .section-two-text{
+        padding: 0;
+    }
+
+    .description-two{
+        font-size: 1.6rem;
+        color: hsl(0, 0%, 75%);
+        line-height: 1.4;
+    }
+
+    .margin-des{
+        margin-bottom: 3.6rem;
+    }
+
+    .feature{
+        transform: translateX(50%);
+        padding-bottom: 0.6rem;
+    }
+
+    .testimonial{
+        margin: 0 1.2rem 8rem; 
+        padding: 2.4rem;
+    }
+
+    .testimonial-text{
+        font-size: 1.3rem;
+    }
+
+    /* ctn-section */
+    .cta-section{
+        text-align: center;
+        padding: 5.2rem 0;
+    }
+
+    .cta--heading{
+        font-size: 2rem;
+    }
+
+    .cta{
+        grid-template-columns:1fr;
+        gap:2.4rem;
+    }
+
+    .cta--description{
+        padding: 0 1.2rem;
+        font-size: 1.6rem;
+    }
+
+    .cta-form{
+        gap:1.2rem;
+        margin: 0 2.4rem;
+        width: 70%;
+        justify-self: center;
+    }
+
+    .cta-input{
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    .cta--btn{
+        font-size: 1.2rem;
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    /* FOOTER SECTION */
+    .footer-section{
+        padding:5.2rem 1.2rem;
+    }
+    .footer-grid{
+        grid-template-columns: 1fr;
+        grid-gap:4.8rem;
+    }
+
+    .footer-links{
+        justify-self: start;
+    }
+
+    .row{
+        justify-self: center;
+    }
+
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
