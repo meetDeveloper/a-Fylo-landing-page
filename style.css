@@ -26,7 +26,7 @@ body{
 /*********************/
 
 .sm-container{
-    max-width: 128rem;
+    max-width: 130rem;
     margin: 0 auto;
 }
 
@@ -83,14 +83,14 @@ img{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12.8rem;
+    margin-bottom: 9.6rem;
     margin-top:4.8rem;
 }
 
 
 .nav-links{
     font-family:'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     list-style: none;
     display: flex;
     gap: 6.2rem;
@@ -134,7 +134,7 @@ img{
 }
 
 input::placeholder{
-    color: hsl(0, 0%, 75%,0.8);
+    color:  hsl(0, 0%, 75%);
 
 }
 
@@ -153,10 +153,12 @@ input::placeholder{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     margin-bottom: 2.4rem;
+    color: 
 }
 
 .description-two{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    color:hsl(243, 87%, 12%);
 }
 
 .illustration-2{
@@ -207,7 +209,7 @@ input::placeholder{
 
 .testimonial{
     background-color:#fff;
-    padding:3rem 4.8rem;
+    padding:3rem;
     margin-right: 35%;
     margin-bottom: 9.6rem;
     border-radius: 0.5rem;
@@ -216,7 +218,7 @@ input::placeholder{
 
 .testimonial-text{
     margin: 1rem 0 2rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.8;
     align-items: center;
 }
@@ -252,7 +254,7 @@ input::placeholder{
 /* CALL TO ACTION */
 /*********************/
 .cta-section{
-    background-color:#696a95;
+    background-color:hsl(238, 22%, 44%);
     font-family:'Raleway', sans-serif ;
     font-weight: 400;
     padding:9.6rem 0;
@@ -289,7 +291,7 @@ input::placeholder{
 }
 
 .cta--btn{
-    padding:1.4rem;
+    padding:1.4rem 1.2rem;
     width:40%;
 }
 
@@ -302,8 +304,9 @@ input::placeholder{
 .footer-section{
     background-color: hsl(243, 87%, 12%);
     color:hsl(240, 80%, 98%);
-    padding:9.6rem 0;
+    padding:9.6rem 0 7.2rem;
     font-size: 1.6rem;
+    margin-bottom: 6.2rem;
 
 }
 
@@ -369,7 +372,7 @@ input::placeholder{
 }
 
 
-@media (max-width: 24em){
+@media (max-width: 25em){
     .sm-container{
         padding:0 2.4rem;
     }
@@ -504,10 +507,15 @@ input::placeholder{
     /* FOOTER SECTION */
     .footer-section{
         padding:5.2rem 1.2rem;
+        margin-bottom: 0;
     }
     .footer-grid{
         grid-template-columns: 1fr;
         grid-gap:4.8rem;
+    }
+
+    .contact{
+        gap:1.8rem;
     }
 
     .footer-links{
